@@ -284,8 +284,9 @@ ul.experience-list li p{margin-bottom: 10px;}
 /*--------------------- footer ---------------------*/
 footer{height: 80px;border-top: 10px solid #8a8a8b; position: relative ;border-bottom: 10px solid #8a8a8b;background-color: #251f21;color:#fff;font-size: 2rem;line-height: 80px;overflow: hidden;}
 footer article{ position:absolute; top:0; left:0;animation: bus 30s ease-out infinite; -webkit-animation: bus 30s ease-out  infinite ;-moz-animation: bus 30s ease-out  infinite ; white-space: nowrap;}
+footer article>div{display: inline-block;}
 footer span{padding-left: 30px;}
-footer img.bus{height: 84px;margin-top: -8px;vertical-align: middle;margin-left: 40px;}
+footer img.bus{height: 84px;vertical-align: middle;margin-left: 40px; display: inline-block;}
 @-moz-keyframes bus {
     0% {
         left: -60%
@@ -294,29 +295,29 @@ footer img.bus{height: 84px;margin-top: -8px;vertical-align: middle;margin-left:
         left: 20%
     }
     100% {
-        left: 100%;
+        left: 60%;
     }
 }
 @-webkit-keyframes bus {
-    0% {
+   0% {
         left: -60%
     }
     20%{
         left: 20%
     }
     100% {
-        left: 100%;
+        left: 60%;
     }
 }
 @keyframes bus {
-    0% {
+   0% {
         left: -60%
     }
     20%{
         left: 20%
     }
     100% {
-        left: 100%;
+        left: 60%;
     }
    
 }
@@ -423,16 +424,15 @@ footer img.bus{height: 84px;margin-top: -8px;vertical-align: middle;margin-left:
      
      /*global*/
      .moble-hide {display: none;}
-
+   
      /*footer*/
-    footer span{padding-left: 30px;}
-    footer img.bus{height: 54px;margin-top: -8px;vertical-align: middle;margin-left: 40px;}
+    footer article{width: 100%;animation: bus 10s ease-out infinite; -webkit-animation: bus 10s ease-out  infinite ;-moz-animation: bus 10s ease-out  infinite ;}
+    footer article>div{ float: left; line-height: 60px;}
+    footer article>div span{padding-left: 10px; font-size: 14px; display: block; height: 20px;}
+    footer img.bus{height: 54px;margin-top: 17px;vertical-align: middle;margin-left: 30px;float: left; }
     @-moz-keyframes bus {
-      0% {
+    0% {
         left: -100%
-    }
-    20%{
-        left: 20%
     }
     100% {
         left: 100%;
@@ -442,19 +442,13 @@ footer img.bus{height: 84px;margin-top: -8px;vertical-align: middle;margin-left:
     0% {
         left: -100%
     }
-    20%{
-        left: 20%
-    }
     100% {
         left: 100%;
     }
 }
 @keyframes bus {
-     0% {
+    0% {
         left: -100%
-    }
-    20%{
-        left: 20%
     }
     100% {
         left: 100%;
@@ -464,5 +458,6 @@ footer img.bus{height: 84px;margin-top: -8px;vertical-align: middle;margin-left:
 }
 @media screen and ( max-width: 320px){
     .mac {top: -40%;}
+footer article>div{width: 50%; }
     
 }
