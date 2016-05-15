@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no,email=no" name="format-detection" />    
+    <link href="icon114-114.png" rel="apple-touch-icon-precomposed">
+    <!-- 禁止缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   
+    <title>Berri</title>
+    <link href="css/berri.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<audio src="css/1.mp3" autoplay="autoplay" id="audio">您的浏览器不支持</audio>
+<canvas class="snow-canvas" speed="1" interaction="false" size="2" count="20" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgb(251,252,253)" wind-power="-1" image="false" width="100%" height="667"></canvas>
+
+<!-- banner -->
+<div class="banner" id="banner">
+	<!-- header -->
+	<header>
+		<h1>Berri</h1>
+		<nav>
+			<div class="nav-btn-ico">
+			    <div class="nav-btn-bar"></div>
+			</div>
+		</nav>
+		<ul class="nav-menu">
+			<li><a href="#banner">个人主页</a></li>
+			<li><a href="#about_title">个人简介</a></li>
+			<li class="mobile-hide"><a href="#skill_title">工作技能</a></li>
+			<li><a href="#progress_title">技能熟练度</a></li>
+			<li><a href="#work_title">工作经验</a></li>
+			<li><a href="#cloud-center">作品集</a></li>
+		</ul>
+	</header>
+	<!-- header end -->
+
+	<div class="me-box">
+		<div onclick="clickA();">
+			<div class="circle-bg"></div>
+			<div class="dots-bg"></div>
+			<img src="img/me.png" alt="">
+		</div>
+	</div>
+
+	<div class="me-info">
+		<div>
+			<p class="item-info-1">中文姓名：郝博宇</p>
+			<p class="item-info-2">出生日期：1988-08-21</p>
+			<p class="item-info-3">联系方式：18612233170</p>
+			<p class="item-info-4">工作经验：5年以上</p>
+			<p class="item-info-5">工作职位：前端工程师，UI设计师</p>
+			<p class="item-info-6">邮箱地址：haoboyu40@qq.com</p>
+		</div>
+	</div>
+
+</div>
+<!-- banner end -->
+
+<section class="wrap" id="wrap">
+	<!-- about -->
+	<div class="about">
+		<h2 id="about_title">个人简介</h2>
+		<span class="mac" id="mac"><img src="img/mac.png" alt="" class="full"></span>
+		<div class="about-info" id="about_info">
+			<p>大家好，我叫郝博宇，大家可叫我小宇或小郝。我来自美丽的雪城。</p>
+			<p>我是一名前端工程师(主要方向)和UI设计师，10年初参加IT工作。</p>
+		</div>
+	</div>
+	<!-- about end -->
+	
+	<!-- skill -->
+	<div class="skill">
+		<div class="skill-bg">
+			<div class="moon border-radius">
+				<span class="dots-big border-radius"></span>
+				<span class="dots-small border-radius"></span>
+			</div>
+			<h2 id="skill_title">工作技能</h2>
+			<img src="img/planet.png" class="skill-planet" id="skill_planet" alt="" />
+			<img src="img/code_css.jpg" class="skill-code-css" id="code_css" alt="" />
+		</div>
+		<div class="rela-skill">
+			<img src="img/man.png" class="skill-man" id="skill_man" alt="">
+			<img src="img/code_js.png" class="skill-code-js" id="code_js" alt="" />
+			<ul class="skill-list">
+				<li class="skill-list-1"><img src="img/check.png" alt=""><img src="img/html5.png" alt=""></li>
+				<li class="skill-list-2"><img src="img/check.png" alt=""><img src="img/css3.png" alt=""></li>
+				<li class="skill-list-3"><img src="img/check.png" alt=""><img src="img/js.png" alt=""></li>
+				<li class="skill-list-4"><img src="img/check.png" alt=""><img src="img/jq.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="progress-box">
+				<h2 id="progress_title">技能熟练度</h2>
+
+				<div class="progress-ring" data-percent="85" data-color="#031427,#ff0000" data-duration="2">
+					<span class="name">HTML</span>
+				</div>
+				<div class="progress-ring" data-percent="85" data-color="#031427,#14fef0" data-duration="2">
+					<span class="name">CSS</span>
+				</div>
+				<div class="progress-ring" data-percent="60" data-color="#031427,#fff45c" data-duration="2">
+					<span class="name">JAVASCRIPT</span>
+				</div>
+				<div class="progress-ring" data-percent="60" data-color="#031427,#00a0e9" data-duration="2">
+					<span class="name">JQUERY</span>
+				</div>
+				<div class="progress-ring" data-percent="80" data-color="#031427,#22ac38" data-duration="2">
+					<span class="name">PHOTOSHOP</span>
+				</div>
+				<div class="progress-ring" data-percent="10" data-color="#031427,#e4007f" data-duration="2">
+					<span class="name">NODE.JS</span>
+				</div>
+			</div>
+	</div>
+	<!-- skill end -->
+
+	<!-- work -->
+	<div class="work">
+		<h2 id="work_title">工作经验</h2>
+		<img src="img/work_planet.png" alt="" class="work-planet" id="work_planet" />
+		<ul class="experience-list">
+			<li class="exp-list-1">
+				<span class="border-radius">1</span>
+				<div class="work-info">
+					<p>2010-03 至 2011-05  万色品尚</p>
+					<p>工作职责：主要工作有，配合产品经理完成商城网站原型图设计及ui设计工作，根据设计图用html+css输出静态页面，
+					用js插件完成网页动态特效，检查网站兼容性问题，网站上线以后制作Banner图和相关图片，维护网站
+					html+css代码，防止网站bug出现。</p>
+				</div>
+			</li>
+			<li class="exp-list-2">
+				<span class="border-radius">2</span>
+				<div class="work-info">
+					<p>2011-05 至 2013-01 英耐乐奇</p>
+					<p>工作职责：主要工作有，参加各个国内外项目的前端制作。根据UI设计师的图。制作完成相应页面。配合小组程序人员完成上线。</p>
+				</div>
+			</li>
+			<li class="exp-list-3">
+				<span class="border-radius">3</span>
+				<div class="work-info">
+					<p>2013-03 至 2014-09  威莎鄂尔</p>
+					<p>工作职责：产品经理，UI设计，与前端制作。根据公司需求，设计该项目的产品原型图，审核通过以后制作Ui效果图，根据效果图制作完成前端页面，主要制作的项目有：1、威莎鄂尔（美容整形平台）2、疤博士 3、泽晟堂(北京)医学研究院 4.一龄博士平台5、移动端健康管理制作 6、移动端美丽订制平台 7、移动端内部管理平台。</p>
+				</div>
+			</li>
+			<li class="exp-list-4">
+				<span class="border-radius">4</span>
+				<div class="work-info">
+					<p>2014-10 至今  君德时代</p>
+					<p>工作职责：主要负责工作，根据产品要求及效果图运用html+css+javascript制作前端页面。及相关专题页面。主要负责项目有
+				微金客平台（pc+移动），财富360平台（pc+移动），君德汇富平台等相关平台管理制作。</p>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	<!-- work end -->
+
+	<div class="works">
+		<div class="earth">
+			<div class="map"></div>
+			<div class="earth-bg"></div>
+		</div>
+		<img src="img/works_moon.png" alt="" class="works-moon" />
+		<div class="clouds">
+			<div class="inside-clouds"></div>
+			<div class="outside-clouds"></div>
+		</div>
+		<div class="works-title-box">
+			<div class="cloud-left"><img src="img/clouds2.png" alt="" class="full" /></div>
+			<div class="cloud-center" id="cloud-center">作品集</div>
+			<div class="cloud-right"><img src="img/clouds3.png" alt="" class="full"></div>
+		</div>
+		<div class="works-device-box">
+			<img src="img/works_mac.png" alt="" class="device-mac" id="device_mac" />
+			<img src="img/works_ipad.png" alt="" class="device-ipad" id="device_ipad" />
+			<img src="img/works_iphone.png" alt="" class="device-iphone" id="device_iphone" />
+		</div>
+		<div class="works-list">
+		<ul>
+			<li class="works-list-1"><img src="img/works1.jpg" class="full" alt=""></li>
+			<li class="works-list-2"><img src="img/works2.jpg" class="full" alt=""></li>
+			<li class="works-list-3"><img src="img/works3.jpg" class="full" alt=""></li>
+			<li class="works-list-4"><img src="img/works4.jpg" class="full" alt=""></li>
+			<li class="works-list-5"><img src="img/works5.jpg" class="full" alt=""></li>
+			<li class="works-list-6"><img src="img/works6.jpg" class="full" alt=""></li>
+			<li class="works-list-7"><img src="img/works7.jpg" class="full" alt=""></li>
+			<li class="works-list-8"><img src="img/works8.jpg" class="full" alt=""></li>
+		</ul>
+		</div>
+		<div class="buildings"><img src="img/buildings.png" alt="" class="full"></div>
+	</div>
+</section>
+
+<footer>
+	<article id="footer_bus">
+		<span>联系方式：18612233170</span><span>邮箱：haoboyu40@qq.com</span>
+		<img src="img/bus.png" alt="" class="bus"/>
+	</article>
+</footer>
+
+<div class="btn-arrow-down" id="arrow_down"> 
+	<span class="arrow-down-p1"></span> 
+	<span class="arrow-down-p2"></span> 
+	<span class="arrow-down-p3"></span> 
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/progress-ring.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/jquery.superscrollorama.js"></script>
+<script src="js/snow-plugin.js"></script>
+<script src="js/berri.js"></script>
+</body>
+</html>
