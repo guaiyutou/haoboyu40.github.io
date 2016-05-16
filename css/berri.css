@@ -364,8 +364,9 @@ footer img.bus{height: 84px;vertical-align: middle;margin-left: 40px; display: i
 /*--------------------- snowflake ----------------------------*/
 .snow-canvas { display: block; width: 100%; height: 100%; top: 0; left: 0; position: fixed; pointer-events: none;z-index: 1;}
 /*--------------------- responsive mode  ----------------------*/ 
-@media screen and (min-width: 481px) and (max-width: 1050px){
-
+@media screen and (min-width: 1366px){
+    .mac{padding-right:8%;}
+    .skill-code-js{margin-top:-360px;}
 }
 @media screen and (max-width: 480px){
     html {font-size: 62.5%;}
