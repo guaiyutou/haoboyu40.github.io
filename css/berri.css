@@ -368,6 +368,14 @@ footer img.bus{height: 84px;vertical-align: middle;margin-left: 40px; display: i
     .mac{padding-right:8%;}
     .skill-code-js{margin-top:-360px;}
 }
+@media screen and (width: 768px){
+    .banner{overflow:hidden;}
+    .me-info{font-size:18px;}
+    .mac{top:66px;}
+    .skill-code-js{margin-top:-190px;}
+    .skill-list{width:70%;margin-left: 0;}
+    .works-device-box{padding-bottom:130px;}
+}
 @media screen and (max-width: 480px){
     html {font-size: 62.5%;}
     header{margin-bottom: 15px;height:40px;}
@@ -392,7 +400,7 @@ footer img.bus{height: 84px;vertical-align: middle;margin-left: 40px; display: i
     .about{height: auto;}
     .about h2{text-align: left;font-size: 2.8rem;padding-left: 7%;}
     .about-info{margin-left:0;width: auto;padding:40px 7% 0;font-size: 1.6rem;}
-    .mac{top: -56%;right: 0px;}
+    .mac{top: -45%;right: 0px;}
     /*skill*/
     .skill-bg,.skill-code-js,.skill-list{display:none;} 
     .rela-skill{padding-top: 0;}
@@ -458,7 +466,7 @@ footer img.bus{height: 84px;vertical-align: middle;margin-left: 40px; display: i
 }
 }
 @media screen and ( max-width: 320px){
-    .mac {top: -40%;}
-footer article>div{width: 50%; }
+    .mac {top: -26%;}
+    footer article>div{width: 50%; }
     
 }
